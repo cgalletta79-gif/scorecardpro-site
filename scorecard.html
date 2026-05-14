@@ -34,9 +34,9 @@ td:first-child{text-align:left;padding-left:16px;font-weight:700;font-size:14px;
 .view-btn:hover{background:rgba(34,197,94,0.22);border-color:rgba(34,197,94,0.6)}
 .totals-row td{background:rgba(34,197,94,0.08);font-weight:700;color:#63d878;border-top:1px solid rgba(34,197,94,0.25)}
 .blue-dot{color:#38BDF8}.white-dot{color:#f3f4f6}.gold-dot{color:#FACC15}.red-dot{color:#ef4444}
-.tee-legend{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;font-size:11px;font-weight:600;color:rgba(255,255,255,0.55);padding:10px 16px;border-top:1px solid rgba(34,197,94,0.15)}
-.tee-legend span{display:flex;align-items:center;gap:4px}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%}
+
+
+
 .footer{margin-top:8px;font-size:12px;color:rgba(255,255,255,0.22);display:flex;align-items:center;gap:10px}
 .footer a{color:rgba(34,197,94,0.55);text-decoration:none;font-weight:600}
 .footer a:hover{color:#22C55E}
@@ -45,6 +45,7 @@ td:first-child{text-align:left;padding-left:16px;font-weight:700;font-size:14px;
 </head>
 <body>
 <div class="wrap">
+  <img src="logo.png" alt="Scorecard Pro" style="width:180px;max-width:60vw;display:block;margin:0 auto 8px;">
   <a href="index.html" class="back-btn">&#8592; Control Panel</a>
   <div class="header-card">
     <div class="header-title">Belk Park Golf Course</div>
@@ -55,42 +56,40 @@ td:first-child{text-align:left;padding-left:16px;font-weight:700;font-size:14px;
     <table>
       <thead><tr><th>Hole</th><th>Par</th><th>Hcp</th><th><span class="blue-dot">&#9679;</span> Blue</th><th><span class="white-dot">&#9679;</span> White</th><th><span class="gold-dot">&#9679;</span> Gold</th><th><span class="red-dot">&#9679;</span> Red</th><th>View</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td class="par-4">4</td><td class="hcp">11</td><td class="yardage">380</td><td class="yardage">360</td><td class="yardage">340</td><td class="yardage">300</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>2</td><td class="par-4">4</td><td class="hcp">9</td><td class="yardage">365</td><td class="yardage">345</td><td class="yardage">325</td><td class="yardage">285</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>3</td><td class="par-3">3</td><td class="hcp">15</td><td class="yardage">165</td><td class="yardage">150</td><td class="yardage">140</td><td class="yardage">120</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>4</td><td class="par-5">5</td><td class="hcp">5</td><td class="yardage">510</td><td class="yardage">490</td><td class="yardage">465</td><td class="yardage">420</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>5</td><td class="par-4">4</td><td class="hcp">3</td><td class="yardage">395</td><td class="yardage">375</td><td class="yardage">350</td><td class="yardage">310</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>6</td><td class="par-3">3</td><td class="hcp">13</td><td class="yardage">185</td><td class="yardage">170</td><td class="yardage">155</td><td class="yardage">130</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>7</td><td class="par-4">4</td><td class="hcp">7</td><td class="yardage">405</td><td class="yardage">380</td><td class="yardage">360</td><td class="yardage">325</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>8</td><td class="par-4">4</td><td class="hcp">1</td><td class="yardage">415</td><td class="yardage">395</td><td class="yardage">370</td><td class="yardage">330</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>9</td><td class="par-5">5</td><td class="hcp">17</td><td class="yardage">530</td><td class="yardage">505</td><td class="yardage">480</td><td class="yardage">435</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr class="totals-row"><td>OUT</td><td>36</td><td></td><td class="yardage">3350</td><td class="yardage">3170</td><td class="yardage">2985</td><td class="yardage">2655</td><td></td></tr>
+        <tr><td>1</td><td class="par-4">4</td><td class="hcp">11</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>2</td><td class="par-4">4</td><td class="hcp">9</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>3</td><td class="par-3">3</td><td class="hcp">15</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>4</td><td class="par-5">5</td><td class="hcp">5</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>5</td><td class="par-4">4</td><td class="hcp">3</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>6</td><td class="par-3">3</td><td class="hcp">13</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>7</td><td class="par-4">4</td><td class="hcp">7</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>8</td><td class="par-4">4</td><td class="hcp">1</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>9</td><td class="par-5">5</td><td class="hcp">17</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr class="totals-row"><td>OUT</td><td>36</td><td></td><td></td></tr>
       </tbody>
     </table>
-    <div class="tee-legend"><span><span class="dot" style="background:#38BDF8"></span>Blue</span><span><span class="dot" style="background:#f3f4f6"></span>White</span><span><span class="dot" style="background:#FACC15"></span>Gold</span><span><span class="dot" style="background:#ef4444"></span>Red</span></div>
   </div>
   <div class="section-label">Back Nine</div>
   <div class="scorecard">
     <table>
       <thead><tr><th>Hole</th><th>Par</th><th>Hcp</th><th><span class="blue-dot">&#9679;</span> Blue</th><th><span class="white-dot">&#9679;</span> White</th><th><span class="gold-dot">&#9679;</span> Gold</th><th><span class="red-dot">&#9679;</span> Red</th><th>View</th></tr></thead>
       <tbody>
-        <tr><td>10</td><td class="par-4">4</td><td class="hcp">8</td><td class="yardage">390</td><td class="yardage">370</td><td class="yardage">350</td><td class="yardage">310</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>11</td><td class="par-3">3</td><td class="hcp">14</td><td class="yardage">175</td><td class="yardage">160</td><td class="yardage">145</td><td class="yardage">120</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>12</td><td class="par-4">4</td><td class="hcp">6</td><td class="yardage">400</td><td class="yardage">380</td><td class="yardage">355</td><td class="yardage">315</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>13</td><td class="par-5">5</td><td class="hcp">4</td><td class="yardage">545</td><td class="yardage">520</td><td class="yardage">490</td><td class="yardage">445</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>14</td><td class="par-4">4</td><td class="hcp">12</td><td class="yardage">370</td><td class="yardage">350</td><td class="yardage">330</td><td class="yardage">290</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>15</td><td class="par-3">3</td><td class="hcp">16</td><td class="yardage">200</td><td class="yardage">185</td><td class="yardage">165</td><td class="yardage">140</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>16</td><td class="par-4">4</td><td class="hcp">2</td><td class="yardage">425</td><td class="yardage">405</td><td class="yardage">380</td><td class="yardage">335</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>17</td><td class="par-4">4</td><td class="hcp">10</td><td class="yardage">360</td><td class="yardage">340</td><td class="yardage">320</td><td class="yardage">280</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr><td>18</td><td class="par-5">5</td><td class="hcp">18</td><td class="yardage">555</td><td class="yardage">530</td><td class="yardage">503</td><td class="yardage">456</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
-        <tr class="totals-row"><td>IN</td><td>36</td><td></td><td class="yardage">3420</td><td class="yardage">3240</td><td class="yardage">3038</td><td class="yardage">2691</td><td></td></tr>
+        <tr><td>10</td><td class="par-4">4</td><td class="hcp">8</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>11</td><td class="par-3">3</td><td class="hcp">14</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>12</td><td class="par-4">4</td><td class="hcp">6</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>13</td><td class="par-5">5</td><td class="hcp">4</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>14</td><td class="par-4">4</td><td class="hcp">12</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>15</td><td class="par-3">3</td><td class="hcp">16</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>16</td><td class="par-4">4</td><td class="hcp">2</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>17</td><td class="par-4">4</td><td class="hcp">10</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr><td>18</td><td class="par-5">5</td><td class="hcp">18</td><td><a href="#" class="view-btn">&#128065; View</a></td></tr>
+        <tr class="totals-row"><td>IN</td><td>36</td><td></td><td></td></tr>
       </tbody>
     </table>
-    <div class="tee-legend"><span><span class="dot" style="background:#38BDF8"></span>Blue</span><span><span class="dot" style="background:#f3f4f6"></span>White</span><span><span class="dot" style="background:#FACC15"></span>Gold</span><span><span class="dot" style="background:#ef4444"></span>Red</span></div>
   </div>
   <div class="scorecard">
     <table><tbody>
-      <tr class="totals-row"><td>TOTAL</td><td>72</td><td></td><td class="yardage">6770</td><td class="yardage">6410</td><td class="yardage">6023</td><td class="yardage">5346</td><td></td></tr>
+      <tr class="totals-row"><td>TOTAL</td><td>72</td><td></td><td></td></tr>
     </tbody></table>
   </div>
   <div class="footer">Powered by <a href="https://verotech.ai" target="_blank">VeroTech.AI</a> <span>|</span> 314-834-7774</div>
