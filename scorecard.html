@@ -84,7 +84,125 @@
               </div>div>
         </div>div>
       <div class="nine-section" id="front-nine">
-          <div class="nine-header"><span>Front Nine (OUT)</span><span class="par-label">Par 36</span></div>div>
+          <div class="nine-header"><span>Front Nine (OUT)</span><span class="par-label">Par 36</span></h<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scorecard Pro — Tournament Scorecard</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;min-height:100%;font-family:'DM Sans',Arial,sans-serif;}
+body{display:flex;flex-direction:column;align-items:center;min-height:100vh;background:#b8c9b0;}
+.site-header{width:100%;background:linear-gradient(180deg,#1a2a1a 0%,#2d4a2d 60%,#4a7a3a 100%);padding:32px 16px 18px;display:flex;flex-direction:column;align-items:center;border-bottom:3px solid #8a6a00;}
+.site-header img{width:200px;max-width:60vw;display:block;margin-bottom:10px;}
+.site-header .tagline{color:#d4a800;font-size:15px;font-weight:700;letter-spacing:0.08em;}
+.content{width:100%;max-width:500px;padding:24px 16px 40px;display:flex;flex-direction:column;gap:16px;}
+.scorer-card{background:#fff;border-radius:12px;padding:18px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.scorer-label{font-size:11px;font-weight:700;letter-spacing:0.12em;color:#6b7280;text-transform:uppercase;margin-bottom:8px;}
+.scorer-input{width:100%;border:1.5px solid #d1d5db;border-radius:8px;padding:12px 14px;font-size:15px;font-family:'DM Sans',Arial,sans-serif;color:#374151;outline:none;}
+.nine-section{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.nine-header{background:#2d4a2d;color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;}
+.nine-header .par-label{color:#a3c97a;font-size:13px;}
+.hole-row{display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #f0f0f0;}
+.hole-row.active{background:#fef9c3;}
+.hole-num{width:32px;font-size:18px;font-weight:700;color:#1a2a1a;flex-shrink:0;}
+.hole-info{flex:1;}
+.hole-par{font-size:14px;font-weight:700;color:#1a2a1a;}
+.hole-hdcp{font-size:12px;color:#6b7280;}
+.hole-start{font-size:12px;color:#2563eb;font-weight:600;}
+.score-controls{display:flex;align-items:center;gap:8px;}
+.score-btn{width:32px;height:32px;border-radius:8px;border:1.5px solid #d1d5db;background:#f9fafb;font-size:18px;font-weight:700;cursor:pointer;color:#374151;}
+.score-display{width:52px;height:44px;border-radius:8px;border:1.5px solid #d1d5db;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#374151;}
+.score-display.scored-eagle{background:#fef3c7;border-color:#d97706;color:#92400e;}
+.score-display.scored-birdie{background:#fee2e2;border-color:#dc2626;color:#dc2626;}
+.score-display.scored-par{background:#f3f4f6;border-color:#9ca3af;color:#374151;}
+.score-display.scored-bogey{background:#dbeafe;border-color:#2563eb;color:#1d4ed8;}
+.score-display.scored-double{background:#ffedd5;border-color:#ea580c;color:#c2410c;}
+.score-display.scored-triple{background:#ede9fe;border-color:#7c3aed;color:#6d28d9;}
+.totals-row{background:#e8f0e3;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;color:#2d4a2d;}
+.total-score-card{background:#2d4a2d;border-radius:12px;padding:18px 20px;color:#fff;display:flex;justify-content:space-between;align-items:center;}
+.total-label{font-size:15px;font-weight:700;}
+.total-sub{font-size:12px;color:#a3c97a;margin-top:2px;}
+.total-value{font-size:28px;font-weight:700;color:#d4a800;}
+.submit-btn{width:100%;padding:18px;background:#d4a800;border:none;border-radius:12px;color:#fff;font-size:17px;font-weight:700;cursor:pointer;}
+.footer{padding:16px;text-align:center;font-size:12px;color:#4b5563;}
+.footer a{color:#5a8a3a;text-decoration:none;font-weight:600;}
+.legend{background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.legend-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.legend-item{display:flex;align-items:center;gap:8px;}
+.legend-badge{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;}
+.badge-eagle{background:#d97706;}.badge-birdie{background:#dc2626;}.badge-par{background:#6b7280;}.badge-bogey{background:#2563eb;}.badge-double{background:#ea580c;}.badge-triple{background:#7c3aed;}
+.legend-text strong{display:block;font-size:13px;font-weight:700;color:#111;}
+.legend-text span{font-size:11px;color:#6b7280;}
+</style>
+</head>
+<body>
+<div class="site-header">
+<img src="logo.png" alt="Scorecard Pro">
+<div class="tagline">Tournament Scorecard</div>
+</div>
+<div class="content">
+<div class="scorer-card">
+<div class="scorer-label">Scorer / Team Captain</div>
+<input type="text" class="scorer-input" id="scorerName" placeholder="Enter scorer or captain name">
+</div>
+<div class="legend">
+<div class="legend-grid">
+<div class="legend-item"><div class="legend-badge badge-eagle">2</div><div class="legend-text"><strong>Eagle</strong><span>2+ under par</span></div></div>
+<div class="legend-item"><div class="legend-badge badge-birdie">3</div><div class="legend-text"><strong>Birdie</strong><span>1 under par</span></div></div>
+<div class="legend-item"><div class="legend-badge badge-par">4</div><div class="legend-text"><strong>Par</strong><span>even</span></div></div>
+<div class="legend-item"><div class="legend-badge badge-bogey">5</div><div class="legend-text"><strong>Bogey</strong><span>1 over par</span></div></div>
+<div class="legend-item"><div class="legend-badge badge-double">6</div><div class="legend-text"><strong>Double Bogey</strong><span>2 over par</span></div></div>
+<div class="legend-item"><div class="legend-badge badge-triple">7</div><div class="legend-text"><strong>Triple+</strong><span>3 or more over</span></div></div>
+</div>
+</div>
+<div class="nine-section">
+<div class="nine-header"><span>Front Nine (OUT)</span><span class="par-label">Par 36</span></div>
+<div class="hole-row active" data-hole="1" data-par="4"><div class="hole-num">1</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-start">&#9654; Starting hole</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(1,-1)">&#8722;</button><div class="score-display" id="score-1">4</div><button class="score-btn" onclick="changeScore(1,1)">+</button></div></div>
+<div class="hole-row" data-hole="2" data-par="4"><div class="hole-num">2</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 2</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(2,-1)">&#8722;</button><div class="score-display" id="score-2">4</div><button class="score-btn" onclick="changeScore(2,1)">+</button></div></div>
+<div class="hole-row" data-hole="3" data-par="3"><div class="hole-num">3</div><div class="hole-info"><div class="hole-par">Par 3</div><div class="hole-hdcp">Hdcp 6</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(3,-1)">&#8722;</button><div class="score-display" id="score-3">3</div><button class="score-btn" onclick="changeScore(3,1)">+</button></div></div>
+<div class="hole-row" data-hole="4" data-par="5"><div class="hole-num">4</div><div class="hole-info"><div class="hole-par">Par 5</div><div class="hole-hdcp">Hdcp 12</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(4,-1)">&#8722;</button><div class="score-display" id="score-4">5</div><button class="score-btn" onclick="changeScore(4,1)">+</button></div></div>
+<div class="hole-row" data-hole="5" data-par="4"><div class="hole-num">5</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 16</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(5,-1)">&#8722;</button><div class="score-display" id="score-5">4</div><button class="score-btn" onclick="changeScore(5,1)">+</button></div></div>
+<div class="hole-row" data-hole="6" data-par="4"><div class="hole-num">6</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 4</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(6,-1)">&#8722;</button><div class="score-display" id="score-6">4</div><button class="score-btn" onclick="changeScore(6,1)">+</button></div></div>
+<div class="hole-row" data-hole="7" data-par="5"><div class="hole-num">7</div><div class="hole-info"><div class="hole-par">Par 5</div><div class="hole-hdcp">Hdcp 8</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(7,-1)">&#8722;</button><div class="score-display" id="score-7">5</div><button class="score-btn" onclick="changeScore(7,1)">+</button></div></div>
+<div class="hole-row" data-hole="8" data-par="3"><div class="hole-num">8</div><div class="hole-info"><div class="hole-par">Par 3</div><div class="hole-hdcp">Hdcp 18</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(8,-1)">&#8722;</button><div class="score-display" id="score-8">3</div><button class="score-btn" onclick="changeScore(8,1)">+</button></div></div>
+<div class="hole-row" data-hole="9" data-par="4"><div class="hole-num">9</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 14</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(9,-1)">&#8722;</button><div class="score-display" id="score-9">4</div><button class="score-btn" onclick="changeScore(9,1)">+</button></div></div>
+<div class="totals-row"><span>Front Nine (OUT) Total</span><span id="front-total">&#8212;</span></div>
+</div>
+<div class="nine-section">
+<div class="nine-header"><span>Back Nine (IN)</span><span class="par-label">Par 36</span></div>
+<div class="hole-row" data-hole="10" data-par="4"><div class="hole-num">10</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 13</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(10,-1)">&#8722;</button><div class="score-display" id="score-10">4</div><button class="score-btn" onclick="changeScore(10,1)">+</button></div></div>
+<div class="hole-row" data-hole="11" data-par="5"><div class="hole-num">11</div><div class="hole-info"><div class="hole-par">Par 5</div><div class="hole-hdcp">Hdcp 11</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(11,-1)">&#8722;</button><div class="score-display" id="score-11">5</div><button class="score-btn" onclick="changeScore(11,1)">+</button></div></div>
+<div class="hole-row" data-hole="12" data-par="3"><div class="hole-num">12</div><div class="hole-info"><div class="hole-par">Par 3</div><div class="hole-hdcp">Hdcp 17</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(12,-1)">&#8722;</button><div class="score-display" id="score-12">3</div><button class="score-btn" onclick="changeScore(12,1)">+</button></div></div>
+<div class="hole-row" data-hole="13" data-par="4"><div class="hole-num">13</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 9</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(13,-1)">&#8722;</button><div class="score-display" id="score-13">4</div><button class="score-btn" onclick="changeScore(13,1)">+</button></div></div>
+<div class="hole-row" data-hole="14" data-par="4"><div class="hole-num">14</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 1</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(14,-1)">&#8722;</button><div class="score-display" id="score-14">4</div><button class="score-btn" onclick="changeScore(14,1)">+</button></div></div>
+<div class="hole-row" data-hole="15" data-par="4"><div class="hole-num">15</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 7</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(15,-1)">&#8722;</button><div class="score-display" id="score-15">4</div><button class="score-btn" onclick="changeScore(15,1)">+</button></div></div>
+<div class="hole-row" data-hole="16" data-par="5"><div class="hole-num">16</div><div class="hole-info"><div class="hole-par">Par 5</div><div class="hole-hdcp">Hdcp 3</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(16,-1)">&#8722;</button><div class="score-display" id="score-16">5</div><button class="score-btn" onclick="changeScore(16,1)">+</button></div></div>
+<div class="hole-row" data-hole="17" data-par="3"><div class="hole-num">17</div><div class="hole-info"><div class="hole-par">Par 3</div><div class="hole-hdcp">Hdcp 15</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(17,-1)">&#8722;</button><div class="score-display" id="score-17">3</div><button class="score-btn" onclick="changeScore(17,1)">+</button></div></div>
+<div class="hole-row" data-hole="18" data-par="4"><div class="hole-num">18</div><div class="hole-info"><div class="hole-par">Par 4</div><div class="hole-hdcp">Hdcp 5</div></div><div class="score-controls"><button class="score-btn" onclick="changeScore(18,-1)">&#8722;</button><div class="score-display" id="score-18">4</div><button class="score-btn" onclick="changeScore(18,1)">+</button></div></div>
+<div class="totals-row"><span>Back Nine (IN) Total</span><span id="back-total">&#8212;</span></div>
+</div>
+<div class="total-score-card">
+<div><div class="total-label">Total Score</div><div class="total-sub" id="total-sub">Enter scores to begin</div></div>
+<div class="total-value" id="grand-total">&#8212;</div>
+</div>
+<button class="submit-btn" onclick="submitScores()">Submit Scores &#8594;</button>
+<div class="footer">Powered by <a href="https://verotech.ai" target="_blank">VeroTech.AI</a> | chris@verotech.ai | 314-834-7774</div>
+</div>
+<script>
+const pars={1:4,2:4,3:3,4:5,5:4,6:4,7:5,8:3,9:4,10:4,11:5,12:3,13:4,14:4,15:4,16:5,17:3,18:4};
+const scores={};
+Object.keys(pars).forEach(function(h){scores[h]=pars[h];});
+let anyChanged=false;
+function getScoreClass(score,par){const diff=score-par;if(diff<=-2)return 'scored-eagle';if(diff===-1)return 'scored-birdie';if(diff===0)return 'scored-par';if(diff===1)return 'scored-bogey';if(diff===2)return 'scored-double';return 'scored-triple';}
+function changeScore(hole,delta){anyChanged=true;scores[hole]=Math.max(1,(scores[hole]||pars[hole])+delta);const el=document.getElementById('score-'+hole);el.textContent=scores[hole];el.className='score-display '+getScoreClass(scores[hole],pars[hole]);updateTotals();}
+function updateTotals(){if(!anyChanged)return;let front=0,back=0;for(let h=1;h<=9;h++)front+=scores[h]||pars[h];for(let h=10;h<=18;h++)back+=scores[h]||pars[h];const grand=front+back;document.getElementById('front-total').textContent=front;document.getElementById('back-total').textContent=back;document.getElementById('grand-total').textContent=grand;const diff=grand-72;document.getElementById('total-sub').textContent=diff===0?'Even par':(diff>0?'+'+diff+' over par':Math.abs(diff)+' under par');}
+function submitScores(){const name=document.getElementById('scorerName').value.trim();if(!name){alert('Please enter a scorer or team captain name before submitting.');return;}if(!anyChanged){alert('Please enter scores before submitting.');return;}let front=0,back=0;for(let h=1;h<=9;h++)front+=scores[h];for(let h=10;h<=18;h++)back+=scores[h];alert('Scores submitted!\n\nScorer: '+name+'\nFront Nine: '+front+'\nBack Nine: '+back+'\nTotal: '+(front+back));}
+</script>
+</body>
+</html>div>div>
           <div class="hole-row active" data-hole="1" data-par="4"><div class="hole-num">1</div>div><div class="hole-info"><div class="hole-par">Par 4</div>div><div class="hole-start">&#9654; Starting hole</div>div></div>div><div class="score-controls"><button class="score-btn minus-btn" onclick="changeScore(1,-1)">&#8722;</button>button><div class="score-display" id="score-1">4</div>div><button class="score-btn plus-btn" onclick="changeScore(1,1)">+</button>button></div>div></div>div>
           <div class="hole-row" data-hole="2" data-par="4"><div class="hole-num">2</div>div><div class="hole-info"><div class="hole-par">Par 4</div>div><div class="hole-hdcp">Hdcp 2</div>div></div>div><div class="score-controls"><button class="score-btn minus-btn" onclick="changeScore(2,-1)">&#8722;</button>button><div class="score-display" id="score-2">4</div>div><button class="score-btn plus-btn" onclick="changeScore(2,1)">+</button>button></div>div></div>div>
           <div class="hole-row" data-hole="3" data-par="3"><div class="hole-num">3</div>div><div class="hole-info"><div class="hole-par">Par 3</div>div><div class="hole-hdcp">Hdcp 6</div>div></div>div><div class="score-controls"><button class="score-btn minus-btn" onclick="changeScore(3,-1)">&#8722;</button>button><div class="score-display" id="score-3">3</div>div><button class="score-btn plus-btn" onclick="changeScore(3,1)">+</button>button></div>div></div>div>
@@ -165,8 +283,4 @@
     }
   </script>
   </body>
-</html>html>
-  </script></div></span></span></strong>
-  </body>
-  </style></title>
-  </head>
+</html>
